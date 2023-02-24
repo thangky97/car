@@ -11,7 +11,10 @@
         <div class="container-fluid p0">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="h600" id="map-canvas"></div>
+                    <div class="h600"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1173.0257211598241!2d105.76919006979256!3d21.02771304707368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac445ddda9f3%3A0xd46ad1877057443e!2zTUcgTeG7uSDEkMOsbmg!5e0!3m2!1svi!2s!4v1677253438176!5m2!1svi!2s"
+                            width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </div>
         </div>

@@ -20,23 +20,25 @@ class HomeController extends Controller
         // $this->v['cars'] = $cars->loadList($this->v['extParams']);
         // return view('client.layout.home', $this->v);
 
-        $name = $request->get('name');
-        $category = CategoryCar::select('id', 'name', 'price')->where('id', '>', 4)->get(); 
-        if($name){
-            return view('client.layout.home', 
-                [    
-                    'name' => $name,  
-                ]); 
-        }else{ 
-            $cars = Car::select('id', 'name', 'image', 'status')
-            //->where('status', '=', 1)
+        // $name = $request->get('name');
+        // $category = CategoryCar::select('id', 'name', 'price')->where('id', '>', 4)->get(); 
+        // if($name){
+        //     return view('client.layout.home', 
+        //         [    
+        //             'name' => $name,  
+        //         ]); 
+        // }else{ 
+        //     $cars = Car::select('id', 'name', 'image', 'status')
+        //     //->where('status', '=', 1)
             
-            ->paginate(4); 
-            return view('client.layout.home', 
-                [   'category' => $category,
-                    'name' => $name,
-                    'cars' => $cars 
-                ]);
+        //     ->paginate(4); 
+        //     return view('client.layout.home', 
+        //         [   'category' => $category,
+        //             'name' => $name,
+        //             'cars' => $cars 
+        //         ]);
+
+        return view('client.home');
         } 
 
         // $name = $request->get('name');
@@ -53,7 +55,7 @@ class HomeController extends Controller
         //     'cars' => $cars,
         //     'name' => $name
         // ]);
-    }
+    
 
     // public function list(Request $request) {
     //     $shop = new Bds();
@@ -96,4 +98,5 @@ class HomeController extends Controller
     //     $this->v['objItem'] = $objItem;
     //     return view('client.layouts.detailNew', $this->v);
     // }
-}
+
+    }

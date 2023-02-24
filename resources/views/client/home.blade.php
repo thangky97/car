@@ -93,7 +93,7 @@
     </section>
 
     <!-- Product  -->
-    <section class="featured-product">
+    {{-- <section class="featured-product">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -451,7 +451,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Delivery Divider -->
     <section class="deliver-divider bg-img1">
@@ -486,7 +486,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="main-title text-center">
-                        <h2>Popular Vehicles</h2>
+                        <h2>Ô tô nổi bật</h2>
                     </div>
                 </div>
             </div>

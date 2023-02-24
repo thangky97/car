@@ -42,30 +42,29 @@
             <!-- /.mobile-menu -->
             <nav id="menu" class="stylehome1">
                 <ul>
-                    <li> <a href="#"><span class="title">Trang chủ</span></a></li>
-                    <li> <a href="#"><span class="title">Explore</span></a>
-                        <!-- Level Two-->
-                        <ul>
-                            <li><a href="page-dashboard.html">Dashboard</a></li>
-                            <li><a href="page-dashboard-profile.html">Profile</a></li>
-                            <li><a href="page-login.html">Logout</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="#"><span class="title">Tin tức</span></a></li>
-                    <li> <a href="#"><span class="title">Sản phẩm</span></a></li>
-                    <li> <a href="#"><span class="title">Dịch vụ</span></a></li>
-                    <li> <a href="#"><span class="title">Pages</span></a>
-                        <ul>
-                            <li><a href="page-about.html">About Us</a></li>
-                            <li><a href="page-calculator.html">Calculator</a></li>
-                            <li><a href="page-compare.html">Compare</a></li>
-                            <li><a href="page-contact.html">Contact</a></li>
-                            <li><a href="page-faq.html">Faq</a></li>
-                            <li><a href="page-login.html">Login</a></li>
-                            <li><a href="page-register.html">Register</a></li>
-                            <li><a href="page-service.html">Service</a></li>
-                        </ul>
-                    </li>
+                    <li> <a href="/"><span class="title">Trang chủ</span></a></li>
+                <li><a href="#"><span class="title">Về chúng tôi</span></a></li>
+                <li> <a href="/products"><span class="title">Sản phẩm</span></a>
+                    <ul>
+                        <li><a href="#">MG5</a></li>
+                        <li><a href="#">MG ZS</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#"><span class="title">Dịch vụ</span></a>
+                    <ul>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Dịch vụ bảo dưỡng</a></li>
+                        <li><a href="#">Dịch vụ sữa chữa</a></li>
+                        <li><a href="/contact">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li> <a href="/news"><span class="title">Tin tức</span></a></li>
+                <li> <a href="#"><span class="title">Dự tính chi phí</span></a>
+                    <ul>
+                        <li><a href="#">Chi phí lăn bánh</a></li>
+                        <li><a href="#">Chi phí trả góp</a></li>
+                    </ul>
+                </li>
                     <!-- Only for Mobile View -->
                     <li class="mm-add-listing">
                         <span class="border-none">
