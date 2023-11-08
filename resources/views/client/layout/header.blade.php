@@ -17,13 +17,13 @@
             <!-- Responsive Menu Structure-->
             <ul id="respMenu" class="ace-responsive-menu menu_list_custom_code wa text-end"
                 data-menu-style="horizontal">
-                <li> <a href="/"><span class="title">Trang chủ</span></a></li>
+                <li> <a href="{{ route('route_FrontEnd_Home') }}"><span class="title">Trang chủ</span></a></li>
                 <li><a href="#"><span class="title">Về chúng tôi</span></a></li>
-                <li> <a href="/products"><span class="title">Sản phẩm</span></a>
-                    <ul>
+                <li> <a href="{{ route('route_FrontEnd_Car') }}"><span class="title">Ô tô</span></a>
+                    {{-- <ul>
                         <li><a href="#">MG5</a></li>
                         <li><a href="#">MG ZS</a></li>
-                    </ul>
+                    </ul> --}}
                 </li>
                 <li> <a href="#"><span class="title">Dịch vụ</span></a>
                     <ul>

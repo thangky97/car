@@ -1,1 +1,0 @@
-ds trang thiết bị

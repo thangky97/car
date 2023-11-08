@@ -1,1 +1,0 @@
-add thông số

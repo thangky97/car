@@ -34,6 +34,7 @@
     <section class="car-category mobile_space bgc-f9 z-2 pb100">
         <div class="container">
             <div class="row">
+                @foreach ($category as $cate)
                 <div class="col-6 col-sm-6 col-md-4 col-lg col-xl wow fadeInUp" data-wow-duration="1s"
                     data-wow-delay="0.1s">
                     <div class="category_item">
@@ -41,59 +42,17 @@
                             <img src="images/category-item/1.png" alt="1.png">
                         </div>
                         <div class="details">
-                            <p class="title"><a href="page-car-single-v1.html">Compact</a></p>
+                            <p class="title"><a href="page-car-single-v1.html">{{ $cate->name }}</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg col-xl wow fadeInUp" data-wow-duration="1s"
-                    data-wow-delay="0.3s">
-                    <div class="category_item">
-                        <div class="thumb">
-                            <img src="images/category-item/2.png" alt="2.png">
-                        </div>
-                        <div class="details">
-                            <p class="title"><a href="page-car-single-v1.html">Sedan</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg col-xl wow fadeInUp" data-wow-duration="1s"
-                    data-wow-delay="0.5s">
-                    <div class="category_item">
-                        <div class="thumb">
-                            <img src="images/category-item/3.png" alt="3.png">
-                        </div>
-                        <div class="details">
-                            <p class="title"><a href="page-car-single-v1.html">SUV</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg col-xl wow fadeInUp" data-wow-duration="1s"
-                    data-wow-delay="0.7s">
-                    <div class="category_item">
-                        <div class="thumb">
-                            <img src="images/category-item/4.png" alt="4.png">
-                        </div>
-                        <div class="details">
-                            <p class="title"><a href="page-car-single-v1.html">Convertible</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg col-xl wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
-                    <div class="category_item">
-                        <div class="thumb">
-                            <img src="images/category-item/5.png" alt="5.png">
-                        </div>
-                        <div class="details">
-                            <p class="title"><a href="page-car-single-v1.html">Coupe</a></p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
 
     <!-- Product  -->
-    {{-- <section class="featured-product">
+    <section class="featured-product">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -110,11 +69,11 @@
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tất
                                 cả</button>
-                            <button class="nav-link" id="nav-shopping-tab" data-bs-toggle="tab"
+                            {{-- <button class="nav-link" id="nav-shopping-tab" data-bs-toggle="tab"
                                 data-bs-target="#nav-shopping" role="tab" aria-controls="nav-shopping"
                                 aria-selected="false">MG5</button>
                             <button class="nav-link" id="nav-hotels-tab" data-bs-toggle="tab" data-bs-target="#nav-hotels"
-                                role="tab" aria-controls="nav-hotels" aria-selected="false">MG ZS</button>
+                                role="tab" aria-controls="nav-hotels" aria-selected="false">MG ZS</button> --}}
                         </div>
                         <!-- Tab panes -->
                         <div class="tab-content col-lg-12" id="nav-tabContent">
@@ -148,10 +107,8 @@
                                                 <div class="details">
                                                     <div class="wrapper">
                                                         <h6 class="title"><a
-                                                                href="page-car-single-v1.html">{{ $car->name }}</a></h6>
-                                                                @foreach($category as $cate)
-                                                        <h5 class="price">{{$cate->price}}</h5>
-                                                        @endforeach
+                                                                href="{{ route('route_FrontEnd_Car_Detail', ['id' => $car->id]) }}">{{ $car->name }}</a></h6>
+                                                        <h5 class="price">{{ number_format($car->price) }} đ</h5>
                                                         <div class="listign_review">
                                                             <ul class="mb0">
                                                                 <li class="list-inline-item"><a href="#"><i
@@ -451,7 +408,7 @@
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
 
     <!-- Delivery Divider -->
     <section class="deliver-divider bg-img1">

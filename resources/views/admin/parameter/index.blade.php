@@ -1,1 +1,0 @@
-ds thông số

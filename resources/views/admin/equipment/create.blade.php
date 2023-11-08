@@ -1,1 +1,0 @@
-add trang thiết bị

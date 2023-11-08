@@ -22,6 +22,7 @@
   <section class="our-listing pt0 bgc-f9 pb30-991">
     <div class="container">
       <div class="row">
+
         <div class="col-lg-4 col-xl-3 dn-md">
           <div class="sidebar_feature_listing_widget">
             <h4 class="title">@yield('contet-title')</h4>
@@ -127,11 +128,12 @@
             </div>
           </div>
           <div class="row">
+            @foreach($listCar as $car)
             <div class="col-sm-6 col-xl-4">
               <div class="car-listing">
                 <div class="thumb">
                   <div class="tag">FEATURED</div>
-                  <img src="images/listing/9.jpg" alt="9.jpg">
+                  <img src="{{ asset($car->image) ? '' . Storage::url($car->image) : $car->name }}" alt="9.jpg" style="height: 200px; width: 100%; object-fit: cover">
                   <div class="thmb_cntnt2">
                     <ul class="mb0">
                       <li class="list-inline-item"><a class="text-white" href="#"><span class="flaticon-photo-camera mr3"></span> 22</a></li>
@@ -158,12 +160,13 @@
                         <li class="list-inline-item">(684 reviews)</li>
                       </ul>
                     </div>
-                    <h5 class="price mt-3">$478</h5>
-                    <h6 class="title"><a href="#">Audi A3 Hatchback - 2021</a></h6>
+                    <h5 class="price mt-3">{{ number_format($car->price) }} đ</h5>
+                    <h6 class="title"><a href="{{ route('route_FrontEnd_Car_Detail', ['id' => $car->id]) }}">{{ $car->name }}</a></h6>
                   </div>
                 </div>
               </div>
             </div>
+            @endforeach
           </div>
           <div class="row">
             <div class="col-lg-12">
