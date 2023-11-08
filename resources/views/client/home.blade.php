@@ -86,7 +86,7 @@
                                             <div class="car-listing">
                                                 <div class="thumb">
 
-                                                    <img src="images/listing/1.jpg" alt="1.jpg">
+                                                    <img src="{{ asset($car->image) ? '' . Storage::url($car->image) : $car->name }}" alt="1.jpg" style="height: 200px; width: 100%; object-fit: cover">
                                                     <div class="thmb_cntnt2">
                                                         <ul class="mb0">
                                                             <li class="list-inline-item"><a class="text-white"
